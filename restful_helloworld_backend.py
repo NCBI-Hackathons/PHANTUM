@@ -1,11 +1,18 @@
 from flask import Flask, request
+from flask_cors import CORS
 from flask_restful import Resource, Api
 from json import dumps
+import json
 
 ## Using code from https://github.com/narenaryan/Salary-API as starting template
 
 app = Flask(__name__)
 api = Api(app)
+
+#app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
+#app.config['CORS_HEADERS'] = 'Content-Type
+
+CORS(app, origins="*")
 
 class Hello_World(Resource):
     def get(self):
@@ -28,8 +35,10 @@ class postJsonHandler(Resource):
         }
         '''
         print (request.is_json)
-        content = request.get_json()
-        print (content['device'])
+        print (request.get_data())
+        print (request.get_json(force=True))
+        #content = request.get_json()
+        #print (content['device'])
         return 'JSON posted'
 
 @app.route('/')
