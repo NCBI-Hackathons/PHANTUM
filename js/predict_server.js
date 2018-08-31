@@ -38,24 +38,24 @@ $('.upload-area').on('drop', function (e) {
     // uploadData(fd);
 });
 
-// Open file selector on div click
-$("#uploadfile").click(function(){
+  // Open file selector on div click
+  $("#uploadfile").click(function () {
     $("#file").click();
-});
+  });
 
   // file selected
   $("#file").change(function () {
     var fd = new FormData();
 
     var files = $('#file')[0].files[0];
-
+    
     var reader = new FileReader();
 
-      reader.onload = function () {
-        var image = new Image();
-        image.src = reader.result;
+    reader.onload = function () {
+      var image = new Image();
+      image.src = reader.result;
 
-    image.onload = function() {
+      image.onload = function () {
         console.log(image.width);
         console.log(image.height);
         var max_height = 200;
@@ -64,13 +64,13 @@ $("#uploadfile").click(function(){
         var new_height = image.height;
         var new_width = image.width;
 
-        if((image.height >= image.width) && (image.height > max_height)){
+        if ((image.height >= image.width) && (image.height > max_height)) {
           new_height = max_height;
-          new_width = new_height*(image.width/image.height);
+          new_width = new_height * (image.width / image.height);
         }
-        if(image.width >= image.height && image.width > max_width){
+        if (image.width >= image.height && image.width > max_width) {
           new_width = max_width;
-          new_height = new_width*(image.height/image.width);
+          new_height = new_width * (image.height / image.width);
         }
 
         console.log('new_height ' + new_height);
@@ -79,11 +79,12 @@ $("#uploadfile").click(function(){
           .attr('src', image.src)
           .width(new_width)
           .height(new_height);
-    };
-        
+        $("#output_text").text(reader.result);
       };
 
-      reader.readAsDataURL(files);
+    };
+
+    reader.readAsDataURL(files);
 
     fd.append('file', files);
 
@@ -107,10 +108,16 @@ $("#uploadfile").click(function(){
       var firstName = name; // For Success/Failure Message
       $("#output_text").text("Hello " + firstName + "!");
       // Check for white space in name for Success/Fail message
-      if (firstName.indexOf(' ') >= 0) {
+/*       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
+      } */
+
+      var fileLength = $("#file")[0].files.length;
+      if (fileLength === 0) {
+        alert("No file selected.");
       }
-      $this = $("#sendMessageButton");
+
+      $this = $("#sendPredictButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
         url: "http://127.0.0.1:5002/json",
