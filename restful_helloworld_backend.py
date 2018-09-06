@@ -3,6 +3,8 @@ from flask_cors import CORS
 from flask_restful import Resource, Api
 from json import dumps
 import json
+import user_def_utils.test_mod as tmod
+import user_def_utils.image_utils as image_utils
 
 ## Using code from https://github.com/narenaryan/Salary-API as starting template
 
@@ -17,12 +19,28 @@ CORS(app, origins="*")
 class Hello_World(Resource):
     def get(self):
         # Return string Hello World
-        return {'Hello':  'world!'}
+        return {'Hello':  'world!',
+        'also': tmod.hello_world_mod()}
 
 class Hey_You(Resource):
     def get(self, user_name):
         # Return string Hello World
         return {'Hello':  user_name}
+
+class postJsonHandler_image(Resource):
+    def post(self):
+        print (request.is_json)
+        #print (request.get_data())
+        #print (request.get_json(force=True))
+        content = request.get_json(force=True)
+        #print (content['image'])
+        im_obj = image_utils.base64_to_img(content['image'])
+        im_obj_rot90 = image_utils.img_rot_90deg(im_obj)
+        print(image_utils.img_to_disk(im_obj_rot90,'test'))
+        im_base64_rot90 = image_utils.img_to_base64(im_obj_rot90)
+        return {'message':'JSON posted',
+        'original_image':content['image'],
+        'return_image':im_base64_rot90}
 
 class postJsonHandler(Resource):
     def post(self):
@@ -47,6 +65,7 @@ def index():
 
 api.add_resource(Hello_World, '/helloworld')
 api.add_resource(postJsonHandler, '/json')
+api.add_resource(postJsonHandler_image, '/json_image')
 api.add_resource(Hey_You, '/hey/<string:user_name>')
 
 if __name__ == '__main__':
