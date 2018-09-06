@@ -147,7 +147,16 @@
               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
             </div>
           </form> -->
-          <!-- <p id="output_text">This is a paragraph.</p> -->
+          <p hidden id="image_data">Original Image data goes here.</p>
+          <p hidden id="image_data_returned">Updated Image data goes here.</p>
+          <div>
+            Original Image<br>
+          <img id="imgOriginal" class="imgBox" />
+        </div>
+        <div>
+            Returned Image<br>
+          <img id="imgReturned" class="imgBox" />
+        </div>
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
           <!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">

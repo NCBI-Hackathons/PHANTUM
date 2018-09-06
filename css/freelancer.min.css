@@ -29,3 +29,9 @@ body{font-family:Lato}h1,h2,h3,h4,h5,h6{font-weight:700;font-family:Montserrat}h
     height: 200px;
     border: 2px solid lightgray;
 }
+
+.imgBox{
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgray;
+}
