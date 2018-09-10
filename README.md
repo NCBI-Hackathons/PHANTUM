@@ -1,3 +1,10 @@
+# This is a modified version of the Freelancer template.
+
+## Changes Made:
+* Create form that accepts image as required input
+* Upon submission, convert image to base64 format and send image to backend via RESTful api
+* Recieve manipulated image as response from server (if successful) and show manipulated image in corresponding preview area
+
 # [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
 
 [Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
