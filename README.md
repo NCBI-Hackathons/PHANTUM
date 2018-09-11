@@ -2,8 +2,8 @@
 
 *A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows at NIH/NIAID*
 
-### Insert ELF here
 
+![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf.png)
 
 
 ## What is TB?
