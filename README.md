@@ -1,11 +1,11 @@
-# Antimicrobial Resistance and Sensitivity to TB Drugs
+# PHANTUM: Predicting Human Antimicrobial-resistant Tuberculosis Using Machine Learning
 
 *A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows at NIH/NIAID*
 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf-icon%20size.png "elf logo") 
 
-##### Icon made by [Eucalyp](https://www.flaticon.com/authors/eucalyp) from flaticon.com and edited by Chris Shin
+###### Icon made by [Eucalyp](https://www.flaticon.com/authors/eucalyp) from flaticon.com and edited by Chris Shin
 
 
 
@@ -26,14 +26,14 @@ People who are diagnosed with drug-resistant TB are placed on a regimen of secon
 
 
 ## How Bad is TB?
-TB is one of the top 10 causes of death worldwide [WHO](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are estimated to be enrolled in treatment [WHO](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
+TB is one of the top 10 causes of death [worldwide](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are [estimated to be enrolled in treatment](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
 
 To learn more about NIAID's efforts to combat TB, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
 
 ## What Are We Doing About TB?
 We developed a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. We wanted to take advantage of the data made available by the [TB Portals Program](https://tbportals.niaid.nih.gov/). 
 
-Three of the top 30 high-burden MDR-TB countries (Azerbaijan, Belarus, and the Republic of Moldova) [WHO](http://www.who.int/tb/publications/global_report/en/) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
+Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publications/global_report/en/) (Azerbaijan, Belarus, and the Republic of Moldova) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
