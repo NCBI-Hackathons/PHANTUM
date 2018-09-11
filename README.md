@@ -3,8 +3,8 @@
 *A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows at NIH/NIAID*
 
 
-![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf-icon%20size.png)
-
+![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf-icon%20size.png) 
+Icon made by [Eucalyp](https://www.flaticon.com/authors/eucalyp) from flaticon.com and edited by Chris Shin
 
 ## What is TB?
 Tuberculosis (TB) is an infectious bacterial disease that usually affects the lungs but can also affect other parts of the body, such as the brain, the kidneys, or the spine. Most cases of TB are treatable and curable, but because the majority of TB cases occur in developing areas of the world, the majority of people with TB do not have access to proper treatment. 
