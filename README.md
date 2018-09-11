@@ -41,9 +41,9 @@ Three of the top 30 high-burden MDR-TB countries (Azerbaijan, Belarus, and the R
 
 ### Insert link to website here
 
-### Software Workflow Diagram
+### Insert software workflow diagram here
 
-### File structure diagram
+### Insert file structure diagram here
 
 ## Installation options
 
