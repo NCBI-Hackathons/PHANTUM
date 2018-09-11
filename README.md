@@ -28,7 +28,7 @@ TB is one of the top 10 causes of death worldwide [WHO](http://www.who.int/en/ne
 ## What Are We Doing About TB?
 We developed a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. We wanted to take advantage of the data made available by the [TB Portals Program](https://tbportals.niaid.nih.gov/). 
 
-Three of the top 30 high-burden MDR-TB countries (Azerbaijan, Belarus, and the Republic of Moldova) [WHO](http://www.who.int/tb/publications/global_report/en/) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India and China. 
+Three of the top 30 high-burden MDR-TB countries (Azerbaijan, Belarus, and the Republic of Moldova) [WHO](http://www.who.int/tb/publications/global_report/en/) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
 
 To learn more about NIAID's efforts to combat TB, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
 
