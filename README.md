@@ -28,24 +28,68 @@ People who are diagnosed with drug-resistant TB are placed on a regimen of secon
 ## How Bad is TB?
 TB is one of the top 10 causes of death worldwide [WHO](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are estimated to be enrolled in treatment [WHO](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
 
+To learn more about NIAID's efforts to combat TB, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
 
 ## What Are We Doing About TB?
 We developed a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. We wanted to take advantage of the data made available by the [TB Portals Program](https://tbportals.niaid.nih.gov/). 
 
 Three of the top 30 high-burden MDR-TB countries (Azerbaijan, Belarus, and the Republic of Moldova) [WHO](http://www.who.int/tb/publications/global_report/en/) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
 
-To learn more about NIAID's efforts to combat TB, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
-
-### Insert overview diagram here
+![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
 ## How to Use ____
 
 ### Insert link to website here
 
-### Installation 
+### Software Workflow Diagram
 
-## Software Workflow Diagram
-
-## File structure diagram
+### File structure diagram
 
 ## Installation options
+
+We provide two options for installing <this software>: Docker or directly from Github.
+
+### Docker
+
+The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
+
+1. `docker pull ncbihackathons/<this software>` command to pull the image from the DockerHub
+2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
+3. Edit the configuration files as below
+
+### Installing <this software> from Github
+
+1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+2. Edit the configuration files as below
+3. `sh server/<this software>.sh` to test
+4. Add cron job as required (to execute <this software>.sh script)
+
+### Configuration
+
+```Examples here```
+
+# Testing
+
+We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
+
+# Additional Functionality
+
+### DockerFile
+
+<this software> comes with a Dockerfile which can be used to build the Docker image.
+
+  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+  2. `cd server`
+  3. `docker build --rm -t <this software>/<this software> .`
+  4. `docker run -t -i <this software>/<this software>`
+  
+### Website
+
+There is also a Docker image for hosting the main website. This should only be used for debug purposes.
+
+  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+  2. `cd Website`
+  3. `docker build --rm -t <this software>/website .`
+  4. `docker run -t -i <this software>/website`
+  
+
