@@ -42,15 +42,15 @@ We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to d
 ## How to Use PHANTUM
 The frontend of PHANTUM consists of a website where users can upload a CXR (as a png?) and enter clinical measures into a form. 
 
-### Website coming soon
+### Website coming soon :sweat_smile:
 
-### Software workflow diagram coming soon
+### Software workflow diagram coming soon :sweat_smile:
 
-### File structure diagram coming soon
+### File structure diagram coming soon :sweat_smile:
 
-## Installation options coming soon
+## Installation options coming soon :sweat_smile:
 
-### Docker image coming soon
+### Docker image coming soon :sweat_smile:
 
 The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
 
@@ -58,34 +58,34 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
-### Installing PHANTUM from Github coming soon
+### Installing PHANTUM from Github coming soon :sweat_smile:
 1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
 2. Edit the configuration files as below
 3. `sh server/<this software>.sh` to test
 4. Add cron job as required (to execute <this software>.sh script)
   
-### Configuration coming soon
+### Configuration coming soon :sweat_smile:
 
-# Testing coming soon 
+# Testing coming soon :sweat_smile:
 
-# Additional Functionality coming soon
+# Additional Functionality coming soon :sweat_smile:
 
-### DockerFile coming soon
+### DockerFile coming soon :sweat_smile:
 
-<this software> comes with a Dockerfile which can be used to build the Docker image.
+PHANTUM comes with a Dockerfile which can be used to build the Docker image.
 
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+  1. `git clone https://github.com/NCBI-Hackathons/PHANTUM.git`
   2. `cd server`
   3. `docker build --rm -t <this software>/<this software> .`
   4. `docker run -t -i <this software>/<this software>`
   
 
 
-### Website coming soon
+### Website coming soon :sweat_smile:
 
 There is also a Docker image for hosting the main website. This should only be used for debug purposes.
 
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+  1. `git clone https://github.com/NCBI-Hackathons/PHANTUM.git`
   2. `cd Website`
   3. `docker build --rm -t <this software>/website .`
   4. `docker run -t -i <this software>/website`
