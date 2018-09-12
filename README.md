@@ -50,9 +50,7 @@ The frontend of PHANTUM consists of a website where users can upload a CXR (as a
 
 ## Installation options coming soon
 
-We provide two options for installing <this software>: Docker or directly from Github.
-
-### Docker
+### Docker image coming soon
 
 The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
 
@@ -60,24 +58,19 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
-### Installing <this software> from Github
-
+### Installing PHANTUM from Github coming soon
 1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
 2. Edit the configuration files as below
 3. `sh server/<this software>.sh` to test
 4. Add cron job as required (to execute <this software>.sh script)
+  
+### Configuration coming soon
 
-### Configuration
+# Testing coming soon 
 
-```Examples here```
+# Additional Functionality coming soon
 
-# Testing
-
-We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
-
-# Additional Functionality
-
-### DockerFile
+### DockerFile coming soon
 
 <this software> comes with a Dockerfile which can be used to build the Docker image.
 
@@ -88,7 +81,7 @@ We tested four different tools with <this software>. They can be found in [serve
   
 
 
-### Website
+### Website coming soon
 
 There is also a Docker image for hosting the main website. This should only be used for debug purposes.
 
