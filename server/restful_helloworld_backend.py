@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from flask_restful import Resource, Api
 from json import dumps
+import requests
 import json
 import user_def_utils.test_mod as tmod
 import user_def_utils.image_utils as image_utils
@@ -21,6 +22,14 @@ class Hello_World(Resource):
         # Return string Hello World
         return {'Hello':  'world!',
         'also': tmod.hello_world_mod()}
+
+class Hello_World_internal(Resource):
+    def get(self):
+        # Return string Hello World
+        r = requests.get("http://localhost:5050/helloworld_private")
+        print(r.text)
+        json_res = r.json()
+        return json_res
 
 class Hey_You(Resource):
     def get(self, user_name):
@@ -64,6 +73,7 @@ def index():
     return "Welcome to my Python Server" 
 
 api.add_resource(Hello_World, '/helloworld')
+api.add_resource(Hello_World_internal, '/helloworld_internal')
 api.add_resource(postJsonHandler, '/json')
 api.add_resource(postJsonHandler_image, '/json_image')
 api.add_resource(Hey_You, '/hey/<string:user_name>')
