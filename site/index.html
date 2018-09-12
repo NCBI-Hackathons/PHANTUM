@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MLP-TB</title>
+  <title>PHANTUM`</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">MLP-TB</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">PHANTUM</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -43,12 +43,12 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#predict">Predict</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
+          <!-- <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About TB</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -57,10 +57,11 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-      <h1 class="text-uppercase mb-0">MLP-TB</h1>
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/virus.png" alt="">
+      <h1 class="text-uppercase mb-0">PHANTUM</h1>
       <hr class="star-light">
-      <h2 class="font-weight-light mb-0">Machine Learning Predictions of TB Drug Resistance</h2>
+      <h2 class="font-weight-light mb-0">(P)redicting (H)uman (AN)timicrobial-resistant (T)uberculosis (U)sing (M)achine Learning
+        <br> --Rapid Prediction of TB Drug Resistance Probability at Point-of-Care-- </h2>
     </div>
   </header>
 
@@ -80,12 +81,34 @@
                     <p class="help-block text-danger"></p>
                   </div>
                 </div> -->
+                <div class="form-group">
+                  <label for="Gender">Gender</label>
+                  <select class="form-control" id="gender" required='required' data-validation-required-message="Please select patient gender.">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                  <p class="help-block text-danger"></p>
+                </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Age</label>
+                <input class="form-control" id="age" type="number" placeholder="Age" required="required" data-validation-required-message="Please enter patient age.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>BMI</label>
+                <input class="form-control" id="bmi" type="number" placeholder="BMI" required="required" data-validation-required-message="Please enter patient BMI.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <!-- <label>Message</label>
                 <textarea readonly class="form-control" id="output_text" rows="1" placeholder="Upload image for Prediction" required="required"
                   data-validation-required-message="Please upload an image."></textarea> -->
-                <p class="lead">Upload image for Prediction</p>
+                <p class="lead">Upload CXR for Prediction</p>
                 </br>
                 <input type="file" name="file" id="file" required>
                 <img id="imgPreview" />
@@ -150,13 +173,15 @@
           <p hidden id="image_data">Original Image data goes here.</p>
           <p hidden id="image_data_returned">Updated Image data goes here.</p>
           <div>
-            Original Image<br>
-          <img id="imgOriginal" class="imgBox" />
-        </div>
-        <div>
-            Returned Image<br>
-          <img id="imgReturned" class="imgBox" />
-        </div>
+            Original Image
+            <br>
+            <img id="imgOriginal" class="imgBox" />
+          </div>
+          <div>
+            Returned Image
+            <br>
+            <img id="imgReturned" class="imgBox" />
+          </div>
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
           <!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">
@@ -266,7 +291,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
+  <!-- <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
       <h2 class="text-center text-uppercase text-white">About TB</h2>
       <hr class="star-light mb-5">
@@ -287,10 +312,10 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Team Section -->
-  <section class="portfolio" id="team">
+  <!-- <section class="portfolio" id="team">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Our Team!</h2>
       <hr class="star-dark mb-5">
@@ -305,7 +330,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact Section -->
   <!--     <section id="contact">
@@ -357,7 +382,7 @@
     </section> -->
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <!-- <footer class="footer text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
@@ -402,13 +427,13 @@
         </div>
       </div>
     </div>
-  </footer>
-
+  </footer> -->
+  <!-- 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
       <small>Copyright &copy; Your Website 2018</small>
     </div>
-  </div>
+  </div> -->
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
