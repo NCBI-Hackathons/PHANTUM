@@ -40,7 +40,7 @@ We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to d
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
 ## How to Use PHANTUM
-The frontend of PHANTUM consists of a website where users can upload a CXR (as a png?) and enter clinical measures into a form. 
+The frontend of PHANTUM consists of a website where users can upload a CXR and enter clinical measures into a form. 
 
 ### Website coming soon (:sweat_smile:)
 
@@ -52,7 +52,7 @@ The frontend of PHANTUM consists of a website where users can upload a CXR (as a
 
 ### Docker image coming soon (:sweat_smile:)
 
-The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
+The Docker image contains PHANTUM as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the PHANTUM main website (but should only be used for debug purposes).
 
 1. `docker pull ncbihackathons/PHANTUM` command to pull the image from the DockerHub
 2. `docker run ncbihackathons/PHANTUM` Run the docker image from the master shell script
@@ -66,9 +66,9 @@ The Docker image contains <this software> as well as a webserver and FTP server 
   
 ### Configuration coming soon (:sweat_smile:)
 
-# Testing coming soon (:sweat_smile:)
+# Testing In Progress (:construction_worker:)
 
-# Additional Functionality coming soon (:sweat_smile:)
+# Additional Functionality In Progress (:construction_worker:)
 
 ### DockerFile coming soon (:sweat_smile:)
 
@@ -94,9 +94,9 @@ There is also a Docker image for hosting the main website. This should only be u
 There exists many ways this project can be improved in the future. As TB Portals collects more data from high-burden TB countries throughout the world, these models can be trained and updated to ensure a wider applicability of drug-resistant TB probability to more populations. As more data is collected, the opportunity to retrain these models to use clinical data and XCR images to be able to predict the probability of specific drug resistance (e.g. MDR-TB, XDR-TB, RR_TB) also increases. A final future goal for PHANTUM is to ensure that the entire workflow can be HIPAA compliant (or compliant to whichever regulatory body exists for each end user) to help maintain the integrity of this project. 
   
 # Hackathon Members
-* Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov
-* Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov
-* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov
-* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :evergreen_tree:
-* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :squirrel:
+* Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov :blossom:
+* Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov :evergreen_tree:
+* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov :evergreen_tree:
+* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :deciduous_tree:
+* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :cherry_blossom:
 * Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov :deciduous_tree:
