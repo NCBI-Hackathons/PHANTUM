@@ -15,30 +15,21 @@ Tuberculosis (TB) is an infectious bacterial disease that usually affects the lu
 
 There are 10 drugs currently [approved by the U.S. Food and Drug Administration (FDA)](https://www.cdc.gov/tb/topic/treatment/tbdisease.htm) for treating TB. Of these approved drugs, the first-line anti-TB agents that form the core of treatment regimens are isoniazid, rifampin, ethambutol, and pyrazinamide. 
 
-Sometimes drug-resistant TB occurs when bacteria become resistant to the drugs used to treat TB. The [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/types/en/) describes 5 resistance types: 
-* mono-resistance: resistance to one first-line anti-TB drug
-* poly-resistance: resistance to more than one first-line anti-TB drug, other than both isoniazid and rifampicin
-* multidrug resistance (MDR): resistance to at least both isoniazid and rifampicin
-* extensive drug resistance (XDR): resistance to any fluoroquinolone, and at least one of three second-line injectable drugs (capreomycin, kanamycin and amikacin), in addition to multidrug resistance
-* Rifampicin resistance (RR): resistance to rifampicin detected using phenotypic or genotypic methods, with or without resistance to other anti-TB drugs. It includes any resistance to rifampicin, in the form of mono-resistance, poly-resistance, MDR or XDR.
+Drug-resistant TB occurs when bacteria become resistant to the drugs used to treat TB. The [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/types/en/) describes 5 resistance types: mono-resistance, poly-resistance, multidrug resistance (MDR), etensive drug resistance (XDR), and Rifampicin resistance (RR). People who are diagnosed with drug-resistant TB are placed on a regimen of second-line drugs that are less effective than and have more severe side effects than first-line drugs. Mismanagement of TB treatment can lead to spread of drug-resistant TB and higher rates of death. 
 
-People who are diagnosed with drug-resistant TB are placed on a regimen of second-line drugs that are less effective than and have more severe side effects than first-line drugs. Mismanagement of TB treatment can lead to spread of drug-resistant TB and higher rates of death. 
-
-There are several tests recommended by the [WHO](http://www.who.int/tb/publications/implementing_TB_diagnostics/en/) for diagnosing TB. Factors that influence which methodology to use include availability of resources, prevalence of TB in the area, and risk factors. There are also tests used to diagnose drug susceptibility and drug resistance. Drug-susceptibility testing (DST) can be done phenotypically or genotypically. 
+To learn more about TB and NIAID's efforts to combat it, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
 
 ## How Bad is TB?
 TB is one of the top 10 causes of death [worldwide](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are [estimated to be enrolled in treatment](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
 
-To learn more about NIAID's efforts to combat TB, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
-
 ## What Are We Doing About TB?
-We developed a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. We wanted to take advantage of the data made available by the [TB Portals Program](https://tbportals.niaid.nih.gov/). 
+Inspired by the [fast.ai deep learning MOOC](http://www.fast.ai/), we decided to develop a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. 
 
-Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publications/global_report/en/) (Azerbaijan, Belarus, and the Republic of Moldova) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
+Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publications/global_report/en/) (Azerbaijan, Belarus, and the Republic of Moldova) have data available through the [TB Portals program](https://tbportals.niaid.nih.gov/). Georgia and Romania also currently have accessible data, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
 
-### A Multi-Pronged Approach
+We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR, and the [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. 
 
-We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR. The [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. Currently there are no guidelines that place CXR as a triage test before bacteriological testing. 
+PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
