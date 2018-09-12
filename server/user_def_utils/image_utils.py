@@ -4,6 +4,14 @@ import re
 from io import BytesIO
 import base64
 
+from fastai.imports import *
+from fastai.transforms import *
+from fastai.model import *
+from fastai.dataset import *
+from fastai.conv_learner import *
+from fastai.sgdr import *
+from fastai.plots import *
+
 
 
 def base64_to_img(base64_data):
@@ -30,3 +38,23 @@ def img_to_disk(image_obj,filename):
     # Save image to specified location on disk
     image_obj.save('./img/'+filename+'.png','png') # This should be an absolute path
     return 'image saved!'
+
+def x_ray_inference(img_path):
+    '''
+    Takes an image and runs it through a trained ResNext model using the fastai framework
+
+    Input
+    :img_path: string, the path to the image
+
+    Returns
+    :prob: float, the probability that the image is drug resistant
+    '''
+    sz = 340
+    arch = resnext101_64
+    learn = ConvLearner.load('final-frozen_340')
+    trn_tfms, val_tfms = tfms_from_model(arch, sz)
+    im = val_tfms(open_image(img_path))
+    preds = learn.predict_array(im[None])
+    probs = np.exp(preds) # probs[0] is the probability of resistance, probs[1] is the probability of sensitivity
+    
+    return probs[0]
