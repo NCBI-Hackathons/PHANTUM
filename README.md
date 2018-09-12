@@ -66,9 +66,9 @@ The Docker image contains <this software> as well as a webserver and FTP server 
   
 ### Configuration coming soon (:sweat_smile:)
 
-# Testing coming soon (:construction_worker:)
+# Testing In Progress (:construction_worker:)
 
-# Additional Functionality coming soon (:construction_worker:)
+# Additional Functionality In Progress (:construction_worker:)
 
 ### DockerFile coming soon (:sweat_smile:)
 
