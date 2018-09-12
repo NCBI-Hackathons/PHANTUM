@@ -42,35 +42,35 @@ We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to d
 ## How to Use PHANTUM
 The frontend of PHANTUM consists of a website where users can upload a CXR (as a png?) and enter clinical measures into a form. 
 
-### Website coming soon :sweat_smile:
+### Website coming soon (:sweat_smile:)
 
-### Software workflow diagram coming soon :sweat_smile:
+### Software workflow diagram coming soon (:sweat_smile:)
 
-### File structure diagram coming soon :sweat_smile:
+### File structure diagram coming soon (:sweat_smile:)
 
-## Installation options coming soon :sweat_smile:
+## Installation options coming soon (:sweat_smile:)
 
-### Docker image coming soon :sweat_smile:
+### Docker image coming soon (:sweat_smile:)
 
 The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
 
-1. `docker pull ncbihackathons/<this software>` command to pull the image from the DockerHub
-2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
+1. `docker pull ncbihackathons/PHANTUM` command to pull the image from the DockerHub
+2. `docker run ncbihackathons/PHANTUM` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
-### Installing PHANTUM from Github coming soon :sweat_smile:
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+### Installing PHANTUM from Github coming soon (:sweat_smile:)
+1. `git clone https://github.com/NCBI-Hackathons/PHANTUM.git`
 2. Edit the configuration files as below
 3. `sh server/<this software>.sh` to test
 4. Add cron job as required (to execute <this software>.sh script)
   
-### Configuration coming soon :sweat_smile:
+### Configuration coming soon (:sweat_smile:)
 
-# Testing coming soon :sweat_smile:
+# Testing coming soon (:sweat_smile:)
 
-# Additional Functionality coming soon :sweat_smile:
+# Additional Functionality coming soon (:sweat_smile:)
 
-### DockerFile coming soon :sweat_smile:
+### DockerFile coming soon (:sweat_smile:)
 
 PHANTUM comes with a Dockerfile which can be used to build the Docker image.
 
@@ -81,7 +81,7 @@ PHANTUM comes with a Dockerfile which can be used to build the Docker image.
   
 
 
-### Website coming soon :sweat_smile:
+### Website coming soon (:sweat_smile:)
 
 There is also a Docker image for hosting the main website. This should only be used for debug purposes.
 
@@ -97,6 +97,6 @@ There exists many ways this project can be improved in the future. As TB Portals
 * Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov
 * Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov
 * Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov
-* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov
-* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov
-* Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov
+* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :evergreen_tree:
+* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :squirrel:
+* Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov :deciduous_tree:
