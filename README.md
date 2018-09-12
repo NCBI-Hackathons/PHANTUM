@@ -1,6 +1,6 @@
 # PHANTUM: Predicting Human Antimicrobial-resistant Tuberculosis Using Machine Learning
 
-*A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows at NIH/NIAID*
+*A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows at NIH/NIAID (ELFs)*
 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf-icon%20size.png "elf logo") 
@@ -102,10 +102,10 @@ There is also a Docker image for hosting the main website. This should only be u
  # Next Steps
 There exists many ways this project can be improved in the future. As TB Portals collects more data from high-burden TB countries throughout the world, these models can be trained and updated to ensure a wider applicability of drug-resistant TB probability to more populations. As more data is collected, the opportunity to retrain these models to use clinical data and XCR images to be able to predict the probability of specific drug resistance (e.g. MDR-TB, XDR-TB, RR_TB) also increases. A final future goal for PHANTUM is to ensure that the entire workflow can be HIPAA compliant (or compliant to whichever regulatory body exists for each end user) to help maintain the integrity of this project. 
   
-# Contributors 
-* Kelly Carey, MPH
-* Byron Gaskin, PhD
-* Octavio Juarez-Espinosa, PhD
-* Leo Meister, MS
-* Chris Shin, BS
-* Kyle Webb, MS
+# Hackathon Members
+* Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov
+* Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov
+* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov
+* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov
+* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov
+* Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov
