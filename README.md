@@ -88,6 +88,8 @@ We tested four different tools with <this software>. They can be found in [serve
   3. `docker build --rm -t <this software>/<this software> .`
   4. `docker run -t -i <this software>/<this software>`
   
+
+
 ### Website
 
 There is also a Docker image for hosting the main website. This should only be used for debug purposes.
@@ -97,4 +99,13 @@ There is also a Docker image for hosting the main website. This should only be u
   3. `docker build --rm -t <this software>/website .`
   4. `docker run -t -i <this software>/website`
   
-
+ # Next Steps
+There exists many ways this project can be improved in the future. As TB Portals collects more data from high-burden TB countries throughout the world, these models can be trained and updated to ensure a wider applicability of drug-resistant TB probability to more populations. As more data is collected, the opportunity to retrain these models to use clinical data and XCR images to be able to predict the probability of specific drug resistance (e.g. MDR-TB, XDR-TB, RR_TB) also increases. A final future goal for PHANTUM is to ensure that the entire workflow can be HIPAA compliant (or compliant to whichever regulatory body exists for each end user) to help maintain the integrity of this project. 
+  
+# Contributors 
+* Kelly Carey, MPH
+* Byron Gaskin, PhD
+* Octavio Juarez-Espinosa, PhD
+* Leo Meister, MS
+* Chris Shin, BS
+* Kyle Webb, MS
