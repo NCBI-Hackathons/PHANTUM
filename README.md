@@ -66,9 +66,9 @@ The Docker image contains <this software> as well as a webserver and FTP server 
   
 ### Configuration coming soon (:sweat_smile:)
 
-# Testing coming soon (:sweat_smile:)
+# Testing coming soon (:construction_worker:)
 
-# Additional Functionality coming soon (:sweat_smile:)
+# Additional Functionality coming soon (:construction_worker:)
 
 ### DockerFile coming soon (:sweat_smile:)
 
@@ -94,9 +94,9 @@ There is also a Docker image for hosting the main website. This should only be u
 There exists many ways this project can be improved in the future. As TB Portals collects more data from high-burden TB countries throughout the world, these models can be trained and updated to ensure a wider applicability of drug-resistant TB probability to more populations. As more data is collected, the opportunity to retrain these models to use clinical data and XCR images to be able to predict the probability of specific drug resistance (e.g. MDR-TB, XDR-TB, RR_TB) also increases. A final future goal for PHANTUM is to ensure that the entire workflow can be HIPAA compliant (or compliant to whichever regulatory body exists for each end user) to help maintain the integrity of this project. 
   
 # Hackathon Members
-* Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov
-* Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov
-* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov
-* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :evergreen_tree:
-* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :squirrel:
+* Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov :blossom:
+* Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov :evergreen_tree:
+* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov :evergreen_tree:
+* Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :deciduous_tree:
+* Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :cherry_blossom:
 * Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov :deciduous_tree:
