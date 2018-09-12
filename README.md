@@ -40,7 +40,7 @@ We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to d
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
 ## How to Use PHANTUM
-The frontend of PHANTUM consists of a website where users can upload a CXR (as a png?) and enter clinical measures into a form. 
+The frontend of PHANTUM consists of a website where users can upload a CXR and enter clinical measures into a form. 
 
 ### Website coming soon (:sweat_smile:)
 
@@ -52,7 +52,7 @@ The frontend of PHANTUM consists of a website where users can upload a CXR (as a
 
 ### Docker image coming soon (:sweat_smile:)
 
-The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
+The Docker image contains PHANTUM as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the PHANTUM main website (but should only be used for debug purposes).
 
 1. `docker pull ncbihackathons/PHANTUM` command to pull the image from the DockerHub
 2. `docker run ncbihackathons/PHANTUM` Run the docker image from the master shell script
