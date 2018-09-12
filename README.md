@@ -36,7 +36,9 @@ We developed a web tool for rapid diagnosis of TB drug resistance at point-of-ca
 
 Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publications/global_report/en/) (Azerbaijan, Belarus, and the Republic of Moldova) have data available through the TB Portals program. Georgia and Romania also currently have data accessible, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
 
+### A Multi-Pronged Approach
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
+We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR. The [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. Currently there are no guidelines that place CXR as a triage test before bacteriological testing. 
 
 ## How to Use ____
 
