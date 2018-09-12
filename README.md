@@ -29,21 +29,26 @@ Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publica
 
 We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR, and the [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. 
 
+### Who is PHANTUM developed for?
+PHANTUM was developed clinicians who have the necessary clinical measures and corresponding CXR for a patient(see section: How to Use PHANTOM for a list of clinical measures). 
+
+## How Does PHANTUM work?
 PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. We decided to use the [RWeka package](https://cran.r-project.org/web/packages/RWeka/index.html) in the R statistical language to generat C4.5 pruned decision trees using the following clinical values: age of TB onset, gender, BMI, and clinical decision/type of resistance.
 
 We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to develop a convoluted neural network (CNN) trained on a proportion of the CXR images from TB Portals. 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
-## How to Use ____
+## How to Use PHANTUM
+The frontend of PHANTUM consists of a website where users can upload a CXR (as a png?) and enter clinical measures into a form. 
 
-### Insert link to website here
+### Website coming soon
 
-### Insert software workflow diagram here
+### Software workflow diagram coming soon
 
-### Insert file structure diagram here
+### File structure diagram coming soon
 
-## Installation options
+## Installation options coming soon
 
 We provide two options for installing <this software>: Docker or directly from Github.
 
