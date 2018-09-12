@@ -54,12 +54,12 @@ The frontend of PHANTUM consists of a website where users can upload a CXR (as a
 
 The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
 
-1. `docker pull ncbihackathons/<this software>` command to pull the image from the DockerHub
-2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
+1. `docker pull ncbihackathons/PHANTUM` command to pull the image from the DockerHub
+2. `docker run ncbihackathons/PHANTUM` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
 ### Installing PHANTUM from Github coming soon :sweat_smile:
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
+1. `git clone https://github.com/NCBI-Hackathons/PHANTUM.git`
 2. Edit the configuration files as below
 3. `sh server/<this software>.sh` to test
 4. Add cron job as required (to execute <this software>.sh script)
