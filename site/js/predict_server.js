@@ -128,7 +128,9 @@ $(function () {
       $this = $("#sendPredictButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "http://127.0.0.1:5002/json_image",
+        //url: "http://127.0.0.1:5002/json_image",
+        url: "http://127.0.0.1:5002/cxr",
+        //url: "http://35.168.10.2:443/json_image",
         type: "POST",
         dataType: 'json',
         contentType: 'application/json',
