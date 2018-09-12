@@ -51,7 +51,7 @@ def x_ray_inference(img_path):
     '''
     sz = 340
     arch = resnext101_64
-    learn = ConvLearner.load('final-frozen_340')
+    learn = ConvLearner.load('./models/latest')
     trn_tfms, val_tfms = tfms_from_model(arch, sz)
     im = val_tfms(open_image(img_path))
     preds = learn.predict_array(im[None])
