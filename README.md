@@ -24,6 +24,7 @@ Sometimes drug-resistant TB occurs when bacteria become resistant to the drugs u
 
 People who are diagnosed with drug-resistant TB are placed on a regimen of second-line drugs that are less effective than and have more severe side effects than first-line drugs. Mismanagement of TB treatment can lead to spread of drug-resistant TB and higher rates of death. 
 
+There are several tests recommended by the WHO for diagnosing TB. Factors that influence which methodology to use include availability of resources, prevalence of TB in the area, and risk factors (World Health Organization 2015). There are also tests used to diagnose drug susceptibility and drug resistance. Drug-susceptibility testing (DST) can be done phenotypically or genotypically. 
 
 ## How Bad is TB?
 TB is one of the top 10 causes of death [worldwide](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are [estimated to be enrolled in treatment](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
