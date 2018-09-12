@@ -29,7 +29,9 @@ Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publica
 
 We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR, and the [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. 
 
-PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. 
+PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. We decided to use the [RWeka package](https://cran.r-project.org/web/packages/RWeka/index.html) in the R statistical language to generat C4.5 pruned decision trees using the following clinical values: age of TB onset, gender, BMI, and clinical decision/type of resistance.
+
+We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to develop a convoluted neural network (CNN) trained on a proportion of the CXR images from TB Portals. 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
