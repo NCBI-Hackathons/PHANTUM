@@ -11,32 +11,23 @@
 ## What's New?
 At the 12th NIH Research Festival Collaborative Data Science and Machine Learning Hackathon that took place from September 10th to 12th, 2018, PHANTUM (Predicting Human ANtimicrobial-resistant Tuberculosis Using Machine Learning), web tool for rapid prediction of TB drug resistance probability at point-of-care, was born.
 
-We came together again for the February 2019 NIH BioData Science Hackathon to tie up any loose ends we had left and to try to incorporate a new data set from the ABCD study. 
+We came together again for the February 2019 NIH BioData Science Hackathon to tie up any loose ends we had left and to try to incorporate a new data set from the ABCD study. During this second hackathon, we decided to update the acronym to reflect the new data set we incorporated. 
 
 ## What is the ABCD study?
-The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center longitudinal study that follows the brain development and health of 11,875 9-10 year olds through adolescence. This study aims to understand how childhood experiences interact with each other during childhood and adolescence to affect brain development and other outcomes, including social, behavioral, and health. We chose to look at the data released 
+The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center longitudinal study that follows the brain development and health of 11,875 9-10 year olds through adolescence. This study aims to understand how childhood experiences interact with each other during childhood and adolescence to affect brain development and other outcomes, including social, behavioral, and health. The official study website is available [here] (https://abcdstudy.org/index.html). 
 
-## What is TB?
-Tuberculosis (TB) is an infectious bacterial disease that usually affects the lungs but can also affect other parts of the body, such as the brain, the kidneys, or the spine. Most cases of TB are treatable and curable, but because the majority of TB cases occur in developing areas of the world, the majority of people with TB do not have access to proper treatment. 
+On October 31, 2018, there was an annual release (1.1 release) made available to qualified researchers on [NIMH Data Archive](https://data-archive.nimh.nih.gov/). We chose to use demographic and socioeconomic measures, MRI images, and results of the K-SADS questionnaire administered to the study participants. 
 
-There are 10 drugs currently [approved by the U.S. Food and Drug Administration (FDA)](https://www.cdc.gov/tb/topic/treatment/tbdisease.htm) for treating TB. Of these approved drugs, the first-line anti-TB agents that form the core of treatment regimens are isoniazid, rifampin, ethambutol, and pyrazinamide. 
+## What is K-SADS?
+K-SADS is an acronym for Kiddie Schedule for Affective Disorders and Schizophrenia, and it is a semi-structured interview that measures symptoms of mood, anxiety, psychotic and disruptive behavior disorders in children aged 6-18. K-SADS results reflect the DSM-5, the Diagnostic and Statistical Manual of Mental Disorders 5th Edition which is used for psychiatric diagnoses.
 
-Drug-resistant TB occurs when bacteria become resistant to the drugs used to treat TB. The [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/types/en/) describes 5 resistance types: mono-resistance, poly-resistance, multidrug resistance (MDR), etensive drug resistance (XDR), and Rifampicin resistance (RR). People who are diagnosed with drug-resistant TB are placed on a regimen of second-line drugs that are less effective than and have more severe side effects than first-line drugs. Mismanagement of TB treatment can lead to spread of drug-resistant TB and higher rates of death. 
+## Why Use the K-SADS?
+We used the results of the K-SADS as outcome points for our model to predict on using demographic and socioeconomic measures and MRI images. By training on the data made available by the ABCD study, we may be able to develop a point-of-care diagnostic for predicting DSM-5 classifications using clinical data and MRI scans.
 
-To learn more about TB and NIAID's efforts to combat it, visit the [NIAID Tuberculosis Page](https://www.niaid.nih.gov/diseases-conditions/tuberculosis-tb ).
+### Who is PHANTUM/PHANTUM2 developed for?
+PHANTUM was initially developed for clinicians who have the necessary clinical measures and corresponding CXR for a patient(see section: How to Use PHANTOM for a list of clinical measures). 
 
-## How Bad is TB?
-TB is one of the top 10 causes of death [worldwide](http://www.who.int/en/news-room/fact-sheets/detail/tuberculosis). Currently, 2 billion people (about a third of the world's population) are infected with TB. The latest statistics from the [CDC](https://www.cdc.gov/tb/statistics/default.htm) show an estimate of 10.4 million new cases of TB in 2016. Of these, the [WHO](http://www.who.int/tb/areas-of-work/drug-resistant-tb/en/) reports that 580,000 of these cases are MDR-TB/RR-TB. Only about 20% of new cases of MDR-TB/RR-TB are [estimated to be enrolled in treatment](http://apps.who.int/medicinedocs/en/d/Js23098en/). 
-
-## What Are We Doing About TB?
-Inspired by the [fast.ai deep learning MOOC](http://www.fast.ai/), we decided to develop a web tool for rapid diagnosis of TB drug resistance at point-of-care powered by ML-AI technologies. 
-
-Three of the top 30 high-burden MDR-TB [countries](http://www.who.int/tb/publications/global_report/en/) (Azerbaijan, Belarus, and the Republic of Moldova) have data available through the [TB Portals program](https://tbportals.niaid.nih.gov/). Georgia and Romania also currently have accessible data, and TB Portals staff are currently working to collect data from other TB endemic countries such as India, China, South Africa. 
-
-We decided to use both chest x-ray (CXR) images and clinical measures in our prediction model. CXR has high sensitivity for pulmonary TB but low specificity, and diagnosis varies depending on the observer of the CXR, and the [WHO](http://apps.who.int/iris/bitstream/handle/10665/252424/9789241511506-eng.pdf?sequence=1) recommends that TB diagnosis should be bacteriologically confirmed by sputum-sear microscopy, culture, or a molecular test. 
-
-### Who is PHANTUM developed for?
-PHANTUM was developed clinicians who have the necessary clinical measures and corresponding CXR for a patient(see section: How to Use PHANTOM for a list of clinical measures). 
+PHANTUM2 was developed for clinicals who have the necessary demographic information and results of the K-SADS. 
 
 ## How Does PHANTUM work?
 PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. We decided to use the [RWeka package](https://cran.r-project.org/web/packages/RWeka/index.html) in the R statistical language to generat C4.5 pruned decision trees using the following clinical values: age of TB onset, gender, BMI, and clinical decision/type of resistance.
@@ -45,10 +36,13 @@ We used the [PyTorch package](https://github.com/pytorch/pytorch) in Python to d
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/Slide1.PNG "architecture flowchart 1")
 
-## How to Use PHANTUM
+## How to Use PHANTUM/PHANTUM2
 The frontend of PHANTUM consists of a website where users can upload a CXR and enter clinical measures into a form. 
 
-### Website coming soon (:sweat_smile:)
+The frontend of PHANTUM2 consists of ......
+
+### Website 
+https://ncbi-hackathons.github.io/PHANTUM/
 
 ### Software workflow diagram coming soon (:sweat_smile:)
 
@@ -102,7 +96,5 @@ There exists many ways this project can be improved in the future. As TB Portals
 # Hackathon Members
 * Kelly Carey, Writer, NIH/NIAID/OD/OSMO/ODSET, kelly.carey@nih.gov :blossom:
 * Byron Gaskin, Lead, NIH/NIAID/OD/OSMO/ODSET, byron.gaskin@nih.gov :evergreen_tree:
-* Octavio Juarez-Espinosa, Sysadmin, octavio.juarez-espinosa@nih.gov :evergreen_tree:
 * Leo Meister, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, leo.meister@nih.gov :deciduous_tree:
 * Chris Shin, Writer, NIH/NIAID/OD/OSMO/ODSET, chris.shin@nih.gov :cherry_blossom:
-* Kyle Webb, Sysadmin, NIH/NIAID/OD/OSMO/ODSET, kyle.webb@nih.gov :deciduous_tree:
