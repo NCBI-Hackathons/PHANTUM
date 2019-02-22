@@ -21,13 +21,15 @@ On October 31, 2018, there was an annual release (1.1 release) made available to
 ## What is K-SADS?
 K-SADS is an acronym for Kiddie Schedule for Affective Disorders and Schizophrenia, and it is a semi-structured interview that measures symptoms of mood, anxiety, psychotic and disruptive behavior disorders in children aged 6-18. K-SADS results reflect the DSM-5, the Diagnostic and Statistical Manual of Mental Disorders 5th Edition which is used for psychiatric diagnoses.
 
+The K-SADS can be administered to both children and parents (where the parents answer about their children). 
+
 ## Why Use the K-SADS?
-We used the results of the K-SADS as outcome points for our model to predict on using demographic and socioeconomic measures and MRI images. By training on the data made available by the ABCD study, we may be able to develop a point-of-care diagnostic for predicting DSM-5 classifications using clinical data and MRI scans.
+We used the DSM-5 diagnosis of sleep problems as outcome points for our model to predict on using demographic and socioeconomic measures, history of traumatic events, and MRI images. By training on the data made available by the ABCD study, we may be able to develop a point-of-care diagnostic for predicting certain DSM-5 classifications using clinical data, developmental history data, and MRI scans.
 
 ### Who is PHANTUM/PHANTUM2 developed for?
 PHANTUM was initially developed for clinicians who have the necessary clinical measures and corresponding CXR for a patient(see section: How to Use PHANTOM for a list of clinical measures). 
 
-PHANTUM2 was developed for clinicals who have the necessary demographic information and results of the K-SADS. 
+PHANTUM2 was developed for clinicals who have the necessary demographic information, results of the K-SADS, and MRI scans. 
 
 ## How Does PHANTUM work?
 PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. We decided to use the [RWeka package](https://cran.r-project.org/web/packages/RWeka/index.html) in the R statistical language to generat C4.5 pruned decision trees using the following clinical values: age of TB onset, gender, BMI, and clinical decision/type of resistance.
