@@ -14,14 +14,13 @@ At the 12th NIH Research Festival Collaborative Data Science and Machine Learnin
 We came together again for the February 2019 NIH BioData Science Hackathon to tie up any loose ends we had left and to try to incorporate a new data set from the ABCD study. During this second hackathon, we decided to update the acronym to reflect the new data set we incorporated. 
 
 ## What is the ABCD study?
-The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center longitudinal study that follows the brain development and health of 11,875 9-10 year olds through adolescence. This study aims to understand how childhood experiences interact with each other during childhood and adolescence to affect brain development and other outcomes, including social, behavioral, and health. The official study website is available [here] (https://abcdstudy.org/index.html). 
+The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center longitudinal study that follows the brain development and health of 11,875 9-10 year olds through adolescence. This study aims to understand how experiences and environments during childhood and adolescence affect a variety of cognitive, behavioral, and biological outcomes. The official study website is available [here](https://abcdstudy.org/index.html).
 
 On October 31, 2018, there was an annual release (1.1 release) made available to qualified researchers on [NIMH Data Archive](https://data-archive.nimh.nih.gov/). We chose to use demographic and socioeconomic measures, MRI images, and results of the K-SADS questionnaire administered to the study participants. 
 
 ## What is K-SADS?
-K-SADS is an acronym for Kiddie Schedule for Affective Disorders and Schizophrenia, and it is a semi-structured interview that measures symptoms of mood, anxiety, psychotic and disruptive behavior disorders in children aged 6-18. K-SADS results reflect the DSM-5, the Diagnostic and Statistical Manual of Mental Disorders 5th Edition which is used for psychiatric diagnoses.
-
-The K-SADS can be administered to both children and parents (where the parents answer about their children). 
+The K-SADS survey administered to the children enrolled in the study provides a set of definitive diagnoses/outcomes for the first year of the study. We decided to use the sleep problems past and/or present diagnosis from the survey as the endpoint our models would predict because it was the most common diagnosis among the children surveyed (763 out of 4,521).
+To get a minimum viable product up and running, we decided to predicted the presence or absence of sleep problems using a random forest model trained on the traumatic events survey results and a convolutional neural network model trained on the resting-state fMRI scans. We would like to include demographic and socioeconomic measures in our random forest model going forward.
 
 ## Why Use the K-SADS?
 We used the DSM-5 diagnosis of sleep problems as outcome points for our model to predict on using demographic and socioeconomic measures, history of traumatic events, and MRI images. By training on the data made available by the ABCD study, we may be able to develop a point-of-care diagnostic for predicting certain DSM-5 classifications using clinical data, developmental history data, and MRI scans.
@@ -29,7 +28,7 @@ We used the DSM-5 diagnosis of sleep problems as outcome points for our model to
 ### Who is PHANTUM/PHANTUM2 developed for?
 PHANTUM was initially developed for clinicians who have the necessary clinical measures and corresponding CXR for a patient(see section: How to Use PHANTOM for a list of clinical measures). 
 
-PHANTUM2 was developed for clinicals who have the necessary demographic information, results of the K-SADS, and MRI scans. 
+PHANTUM2 was developed for clinicals who have the necessary demographic information, results of K-SADS surveys, and MRI scans. 
 
 ## How Does PHANTUM work?
 PHANTUM uses a weighted average of two prediction modules (for the two different types of data) to make a final decision. We decided to use the [RWeka package](https://cran.r-project.org/web/packages/RWeka/index.html) in the R statistical language to generat C4.5 pruned decision trees using the following clinical values: age of TB onset, gender, BMI, and clinical decision/type of resistance.
