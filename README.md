@@ -1,4 +1,4 @@
-# PHANTUM2: Predicting Human Adolescent outcomes from Text-and-image-data Using Machine Learning
+# PHANTUM2: Predicting HumAN outcomes from Text-and-image-data Using Machine Learning
 
 *An ODSET Emerging Leader in Data Science Fellows (ELFs) at NIH/NIAID Product*
 
