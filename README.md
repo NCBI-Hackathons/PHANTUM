@@ -1,6 +1,6 @@
-# PHANTUM: Predicting Human Antimicrobial-resistant Tuberculosis Using Machine Learning
+# PHANTUM2: Predicting Human Adolescent outcomes from Text-and-image-data Using Machine Learning
 
-*A Collaboration Between OCICB Bioinformatics and Computational Biosciences Branch and ODSET Emerging Leader in Data Science Fellows  (ELFs) at NIH/NIAID*
+*An ODSET Emerging Leader in Data Science Fellows (ELFs) at NIH/NIAID Product*
 
 
 ![alt text](https://github.com/NCBI-Hackathons/Expanding-a-versatile-antimicrobial-resistance-pipeline/blob/master/final%20elf-icon%20size.png "elf logo") 
@@ -8,7 +8,13 @@
 ###### Icon made by [Eucalyp](https://www.flaticon.com/authors/eucalyp) from flaticon.com and edited by Chris Shin
 
 
+## What's New?
+At the 12th NIH Research Festival Collaborative Data Science and Machine Learning Hackathon that took place from September 10th to 12th, 2018, PHANTUM (Predicting Human ANtimicrobial-resistant Tuberculosis Using Machine Learning), web tool for rapid prediction of TB drug resistance probability at point-of-care, was born.
 
+We came together again for the February 2019 NIH BioData Science Hackathon to tie up any loose ends we had left and to try to incorporate a new data set from the ABCD study. 
+
+## What is the ABCD study?
+The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center longitudinal study that follows the brain development and health of 11,875 9-10 year olds through adolescence. This study aims to understand how childhood experiences interact with each other during childhood and adolescence to affect brain development and other outcomes, including social, behavioral, and health. We chose to look at the data released 
 
 ## What is TB?
 Tuberculosis (TB) is an infectious bacterial disease that usually affects the lungs but can also affect other parts of the body, such as the brain, the kidneys, or the spine. Most cases of TB are treatable and curable, but because the majority of TB cases occur in developing areas of the world, the majority of people with TB do not have access to proper treatment. 
