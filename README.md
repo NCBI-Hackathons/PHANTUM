@@ -19,7 +19,7 @@ The ABCD (Adolescent Brain and Cognitive Development) study is a multi-center lo
 On October 31, 2018, there was an annual release (1.1 release) made available to qualified researchers on [NIMH Data Archive](https://data-archive.nimh.nih.gov/). We chose to use demographic and socioeconomic measures, MRI images, and results of the K-SADS questionnaire administered to the study participants. 
 
 ## What is K-SADS?
-The K-SADS survey administered to the children enrolled in the study provides a set of definitive diagnoses/outcomes for the first year of the study. We decided to use the sleep problems past and/or present diagnosis from the survey as the endpoint our models would predict because it was the most common diagnosis among the children surveyed (763 out of 4,521).
+K-SADS is the Kiddie Schedule for Affective Disorders and Schizophrenia. The K-SADS survey administered to the children enrolled in the study provides a set of definitive diagnoses/outcomes for the first year of the study. We decided to use the sleep problems past and/or present diagnosis from the survey as the endpoint our models would predict because it was the most common diagnosis among the children surveyed (763 out of 4,521).
 To get a minimum viable product up and running, we decided to predicted the presence or absence of sleep problems using a random forest model trained on the traumatic events survey results and a convolutional neural network model trained on the resting-state fMRI scans. We would like to include demographic and socioeconomic measures in our random forest model going forward.
 
 ## Why Use the K-SADS?
