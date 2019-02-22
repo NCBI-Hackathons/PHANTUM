@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'Random Forest ABCD Sleep Model'
+python rf_server.py
